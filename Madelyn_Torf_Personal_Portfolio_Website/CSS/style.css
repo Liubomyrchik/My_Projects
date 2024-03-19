@@ -1,0 +1,477 @@
+@import url(https://fonts.googleapis.com/css?family=Nunito:regular,600,700&display=swap);
+@import url(https://fonts.googleapis.com/css?family=Roboto:500&display=swap);
+@import url(https://fonts.googleapis.com/css?family=Playfair+Display:700&display=swap);
+@import url(https://fonts.googleapis.com/css?family=Raleway:500&display=swap);
+@import url(https://fonts.googleapis.com/css?family=Montserrat:regular,600,700&display=swap);
+@import url(https://fonts.googleapis.com/css?family=Comfortaa:700&display=swap);
+
+@font-face {
+    font-family: 'Bariol';
+    src: url('../Fonts/Bariol-Regular.woff2') format('woff2'),
+        url('../Fonts/Bariol-Regular.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+@font-face {
+    font-family: 'Bariol';
+    src: url('../Fonts/Bariol-Bold.woff2') format('woff2'),
+        url('../Fonts/Bariol-Bold.woff') format('woff');
+    font-weight: 700;
+    font-style: normal;
+    font-display: swap;
+}
+
+* {
+    padding: 0;
+    margin: 0;
+    border: 0;
+}
+
+*::before *,
+*::before *::after {
+    box-sizing: border-box;
+}
+
+html,
+body {
+    height: 100%;
+    min-width: 20rem;
+    line-height: 1;
+}
+
+a {
+    color: inherit;
+    text-decoration: none;
+}
+
+ul li {
+    list-style: none;
+}
+
+img {
+    vertical-align: top;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-weight: inherit;
+    font-size: inherit;
+}
+
+button {
+    font-weight: inherit;
+    font-size: inherit;
+    line-height: inherit;
+    cursor: pointer;
+    color: inherit;
+    background-color: transparent;
+}
+
+/* Скидаємо всі стилі для input */
+input {
+    margin: 0;
+    padding: 0;
+    border: none;
+    outline: none;
+    background: none;
+    font: inherit;
+    color: inherit;
+}
+textarea{
+    border: none;
+    padding: 0;
+    margin: 0;
+    resize: none;
+    outline: none;
+    background: none;
+    font-family: inherit;
+    font-size: inherit;
+    color: inherit;
+}
+
+/* defoult styles */
+
+body{
+    font-family: 'Bariol';
+    background-color: #f9faff;
+}
+
+.wrapper {
+    min-height: 100%;
+    overflow: clip;
+    display: flex;
+    flex-direction: column;
+}
+
+.page {
+    flex: 1 1 auto;
+}
+
+/* adaptive-settings */
+
+[class*="__container"] {
+    max-width: 1200px;
+    padding-left: 15px;
+    padding-right: 15px;
+    margin: 0 auto;
+}
+
+/* ____________________________header_____________________________ */
+
+.header {
+    width: 100%;
+}
+.header__container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    height: 56px;
+}
+.header__logo {
+    padding: 12px;
+}
+.logo {
+    color: rgb(37, 40, 43);
+    font-family: Comfortaa;
+    font-size: 18px;
+    font-weight: 700;
+    line-height: 180%;
+    letter-spacing: 0px;
+    text-align: left;
+}
+.header__body {
+    padding: 14px;
+}
+.header__menu {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+.menu__list {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 1.2rem;
+}
+.menu__item {
+    padding-left: 48px;
+}
+.menu__link {
+    color: rgb(37, 40, 43);
+    font-family: Raleway;
+    font-size: 18px;
+    font-weight: 500;
+    line-height: 28px;
+}
+/* ___________________main_____________________ */
+
+.page__main {
+}
+.main__container {
+}
+.main__body {
+    width: 486px;
+    height: 408px;
+}
+.main__label {
+    margin-top: 67px;
+    margin-bottom: 12px;
+}
+.label__text {
+    color: rgb(253, 196, 53);
+    font-family: Nunito;
+    font-size: 20px;
+    font-weight: 700;
+    line-height: 27px;
+    letter-spacing: 0%;
+    text-align: left;
+    text-transform: uppercase;
+}
+.main__titel {
+    margin-bottom: 32px;
+}
+.title__main {
+    color: rgb(51, 51, 51);
+    font-family: Playfair Display;
+    font-size: 64px;
+    font-weight: 700;
+    line-height: 120%;
+    letter-spacing: 0%;
+    text-align: left;
+}
+.main__text {
+    margin-bottom: 32px;
+}
+.text__main {
+    color: rgb(130, 130, 130);
+    font-family: Nunito;
+    font-size: 24px;
+    font-weight: 400;
+    line-height: 36px;
+    letter-spacing: 0%;
+    text-align: left;
+}
+.main__button {
+}
+.button__main1 {
+    color: rgb(37, 40, 43);
+    font-family: Roboto;
+    font-size: 18px;
+    font-weight: 500;
+    border-radius: 8px;
+    background: rgb(253, 196, 53);
+    width: 115px;
+    height: 43px;
+    padding: 8px 24px 8px 24px;
+    margin-right: 12px;
+}
+.button__main2 {
+    color: rgb(37, 40, 43);
+    font-family: Roboto;
+    font-size: 18px;
+    font-weight: 500;
+    border: 2px solid rgb(37, 40, 43);
+    border-radius: 8px;
+    padding: 8px 24px 8px 24px;
+    width: 117px;
+    height: 43px;
+}
+.main__img {
+}
+.img__main {
+    position: absolute;
+    right: 0;
+    top: 0;
+    z-index: -1;
+}
+
+/* second section */
+
+.page__projects {
+    display: flex;
+    flex-direction: column;
+}
+.projects__container {
+    margin-top: 254px;
+}
+.projects__body {
+}
+.projects__title {
+    text-align: center;
+}
+.title__projects {
+    color: rgb(37, 40, 43);
+    font-family: Playfair Display;
+    font-size: 48px;
+    font-weight: 700;
+    line-height: 72px;
+    text-align: center;
+}
+.title__line {
+    display: inline-block;
+    width: 100px;
+    height: 4px;
+    text-align: center;
+    border-radius: 2px;
+    background-color: #FDC435;
+    margin: 4px 0 0 0;
+}
+.projects__cards {
+    display: flex;
+    flex-direction: row;
+    width: 992px;
+    height: 524px;
+    background-color: #FFFFFF;
+    border-radius: 8px;
+    margin-top: 80px;
+    border-radius: 8px;
+}
+.card__body {
+    padding: 146.5px 38.88px 145.5px 50.44px;
+}
+.body__title {
+}
+.card__title {
+    color: rgb(37, 40, 43);
+    font-family: Playfair Display;
+    font-size: 40px;
+    font-weight: 700;
+    line-height: 150%;
+}
+.body__text {
+    margin: 24px 0;
+}
+.card__text {
+    color: rgb(130, 130, 130);
+    font-family: Nunito;
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 150%;
+}
+.body__button {
+    border: 1px solid rgb(37, 40, 43);
+    border-radius: 24px;
+    width: 150px;
+    display: inline;
+    padding: 8px 24px;
+}
+.card__button {
+    color: rgb(37, 40, 43);
+    font-family: Roboto;
+    font-size: 18px;
+    font-weight: 500;
+    line-height: 150%;
+}
+.card__img {
+}
+.img__card {
+    border-radius: 0 8px 8px 0;
+}
+.img__cardcenter{
+    border-radius: 8px 0 0 8px;
+}
+
+/* third section */
+
+.page__form {
+}
+.form__container {
+    width: 400px;
+    display: flex;
+    justify-content: center;
+}
+.form__body {
+}
+.form__title {
+    text-align: center;
+    margin-top: 144px;
+}
+.title__form {
+    color: rgb(37, 40, 43);
+    font-family: Playfair Display;
+    font-size: 48px;
+    font-weight: 700;
+    line-height: 72px;
+    text-align: center;
+}
+.form__line {
+    display: inline-block;
+    width: 100px;
+    height: 4px;
+    text-align: center;
+    border-radius: 2px;
+    background-color: #FDC435;
+    margin: 4px 0 0 0;
+    margin-bottom: 85px;
+}
+.form__form {
+}
+.form__name {
+    color: rgb(37, 40, 43);
+    font-family: Nunito;
+    font-size: 16px;
+    font-weight: 600;
+    line-height: 22px;
+    letter-spacing: 0%;
+    text-align: left;
+}
+.name {
+    margin-bottom: 8px;
+}
+.form__input {
+}
+.input {
+    border: 1px solid rgb(232, 236, 244);
+    border-radius: 8px;
+    background: rgb(255, 255, 255);
+    width: 400px;
+    height: 40px;
+    margin-bottom: 24px;
+}
+.text__area {
+    border: 1px solid rgb(232, 236, 244);
+    border-radius: 8px;
+    background: rgb(255, 255, 255);
+    width: 400px;
+    height: 160px;
+    margin-bottom: 24px;
+}
+.form__button {
+    margin-bottom: 54.50px;
+}
+.button__form {
+    color: rgb(37, 40, 43);
+    font-family: Roboto;
+    font-size: 18px;
+    font-weight: 500;
+    border-radius: 8px;
+    background: rgb(253, 196, 53);
+    padding: 8px 24px 8px 24px;
+    float: right;
+}
+
+/* footer */
+
+.footer {
+}
+.footer__container {
+    text-align: center;
+    width: 192px;
+}
+.footer__body {
+    text-align: center;
+    margin-top: 56px;
+    margin-bottom: 32px;
+}
+.footer__icons {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 37px;
+}
+.icon {
+}
+.footer__text {
+    color: rgb(130, 130, 130);
+    font-family: Nunito;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 22px;
+    text-align: center;
+}
+.footer__p {
+}
+.footer__img {
+}
+.yellow__spot {
+    width: 100%;
+}
+/* ______________________________________ */
+
+.menu__link{
+    position: relative;
+    padding: 0.5rem;
+}
+.menu__link::before{
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 2px;
+    background: rgb(37, 40, 43);;
+    border-radius: 5px;
+    transform: scaleX(0);
+    transition: all 0.6s ease;
+    bottom: 0;
+    left: 0;
+}
+.menu__link:hover::before{
+    transform: scaleX(1);
+}
+/* _____________________________________ */
