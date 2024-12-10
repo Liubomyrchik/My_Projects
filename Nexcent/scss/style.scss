@@ -1,6 +1,6 @@
 /* Reset CSS Import */
 
-@import url(/css/reset.css);
+@import url(../css/reset.css);
 
 /* Fonts */
 
@@ -840,7 +840,7 @@ body {
             right: 0;
             width: 24px;
             height: 24px;
-            background: url('/img/icons/right-arrow.svg') no-repeat right center;
+            background: url('../img/icons/right-arrow.svg') no-repeat right center;
             transition: all 0.3s ease;
         }
         &:focus::after {
@@ -905,7 +905,7 @@ body {
     }
     &__button {
         border-radius: 4px;
-        background: url(/img/icons/white-arrow.svg) no-repeat 125px center, #4CAF4F;
+        background: url(../img/icons/white-arrow.svg) no-repeat 125px center, #4CAF4F;
         padding: 14px 49.56px 14px 32px;
         color: #FFF;
         font-weight: 500;
@@ -964,16 +964,16 @@ body {
         transition: all 0.3s ease;
     }
     &__icon:nth-child(1) {
-        background-image: url(/img/icons/instagram.svg);
+        background-image: url(../img/icons/instagram.svg);
     }
     &__icon:nth-child(2) {
-        background-image: url(/img/icons/dribble.svg);
+        background-image: url(../img/icons/dribble.svg);
     }
     &__icon:nth-child(3) {
-        background-image: url(/img/icons/twitter.svg);
+        background-image: url(../img/icons/twitter.svg);
     }
     &__icon:nth-child(4) {
-        background-image: url(/img/icons/youtube.svg);
+        background-image: url(../img/icons/youtube.svg);
     }
     &__icon:hover {
         transform: scale(1.15);
